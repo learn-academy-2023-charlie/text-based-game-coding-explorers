@@ -42,36 +42,41 @@ gets.chomp
 p'You find yourself standing in front of a giant cave. At the entrance to the cave is a person sitting in a chair, reading a book. As you approach, they greet you. \'Hi, my name is Nicole. Solve this riddle to gain entrance to the cave\' Do you accept this riddle?'
     riddle_answer = gets.chomp
     if riddle_answer == 'y'
-     p "'Nicole asks, \'"Look around to see what you see
-     to gain entry to these tunnels three.
-     The code to the door is Counting up to
-     The answer that will get you through"'"
     else
-        "Too bad, you have to answer it anyways"
-end
-
-The answer that will get you through"
-Glancing at the floor of the cave entrance near Nicole, you see "OTTFFSSEN"
-answer_nicole = gets.chomp
-until answer_nicole = T || answer_nicole = 10
-p 'Try again! Spend a spell of time counting and see if anything comes up. Maybe count to ten and try again.
-answer_nicole = gets.chomp
-end
-p 'win case'
-
-
-def pick_your_tunnel
-    puts "You find yourself at the entrance of three tunnels."
-    puts "You can only pick one."
-    puts "Which will you choose: 1, 2, or 3?"
-    tunnel_choice = get.chomp
-  
-    if choice == 1
-      puts "Proceed down tunnel 1"
-     
-    else
-      puts ""
+      "Too bad, you have to answer it anyways"
     end
+p "Nicole asks,'Look around to see what you see to gain entry to these tunnels three.
+The code to the door is Counting up to the answer that will get you through'"
+    
+
+p 'Glancing at the floor of the cave entrance near Nicole, you see "OTTFFSSEN"'
+answer_nicole = gets.chomp.upcase
+until answer_nicole = 'T' || answer_nicole = '10'
+p 'Try again! Spend a spell of time counting and see if anything comes up. Maybe count to ten and try again.'
+answer_nicole = gets.chomp
+end
+p 'Nicole grants you entry to the cave sytem. You find yourself at the entrance of three tunnels.'
+p 'Which tunnel do you want.  Choose: 1, 2, or 3'
+tunnel_choice = get.chomp
+if tunnel_choice == '1' || tunnel_choice == '2' || tunnel_choice== '3'
+  p "You walk down Tunnel #{tunnel_choice}"
+  p 'At the end of the tunnel you see Charlean holding a cup of tea saying, "Welcome to the Lost City of Aloha!!! She offers it to you as a cure for your dog!'
+else
+  p 'Sorry, your tunnel choice was not correct. You lose!'
+end
+
+
+p "
+  )  (
+    (   ) )
+     ) ( (
+mrf_______)_
+.-'---------|  
+( C|/\/\/\/\/|
+'-./\/\/\/\/|
+  '_________'
+   '-------'"
+
 
 
 
