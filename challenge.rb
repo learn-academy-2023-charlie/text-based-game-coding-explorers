@@ -1,21 +1,21 @@
 # Text-based Game Challenge
 
-p "Your dog recently became sick, but the vet is lost on treatment paths. You seek out Vance, who is known for his excellent plants, to see if he has a homeopathic solution. As you search for Vance, you can't help but notice an odd mural on the wall. It's letters and pictures are all jumbled in bright reds and blues, making no sense to you. You shrug it off and locate Vance at the mini-golf bar..."
-p "Vance waves at you when you walk in. 'Welcome in! What are you drinking today?'"
+puts "Your dog recently became sick, but the vet is lost on treatment paths. You seek out Vance, who is known for his excellent plants, to see if he has a homeopathic solution. As you search for Vance, you can't help but notice an odd mural on the wall. It's letters and pictures are all jumbled in bright reds and blues, making no sense to you. You shrug it off and locate Vance at the mini-golf bar..."
+puts "Vance waves at you when you walk in. 'Welcome in! What are you drinking today?'"
 
     drink = gets.chomp
 
-p "He hands you a #{drink}. 'I've seen you here before, what's your name again?'"
+puts "He hands you a #{drink}. 'I've seen you here before, what's your name again?'"
 
     name = gets.chomp
     
-p "'Oh, that's right, #{name}! How are you doing? You look a little down.'"
+puts "'Oh, that's right, #{name}! How are you doing? You look a little down.'"
 
-p "You tell Vance about your dog, and ask if he has anything that will help. He senses your desperation and lets out a pensieve 'hmmmm...' while eyeing the putt putt course. 'What is your dog's name?' he asks"
+puts "You tell Vance about your dog, and ask if he has anything that will help. He senses your desperation and lets out a pensieve 'hmmmm...' while eyeing the putt putt course. 'What is your dog's name?' he asks"
 
     dog_name = gets.chomp
 
-p "'#{dog_name} is a good name for a dog.' Vance says. 'I might know something that can help you find the path to a cure...' he gazes into the distance, then looks sharply at you. 'You'll have to work to find it though. Are you up to the task?' (y/n)"
+puts "'#{dog_name} is a good name for a dog.' Vance says. 'I might know something that can help you find the path to a cure...' he gazes into the distance, then looks sharply at you. 'You'll have to work to find it though. Are you up to the task?' (y/n)"
     response = gets.chomp
     if response == 'y'
       p "'Great, playing a round of putt-putt will help put your mind at ease and focus you on the task. I wonder what happens if you finish all nine holes?'"
@@ -25,57 +25,57 @@ p "'#{dog_name} is a good name for a dog.' Vance says. 'I might know something t
       You leave the bar and sit on the bench. You have the sense that you've missed an opportunity for not only saving your dog, but having the adventure of a lifetime."
     end
     
- p 'After playing 9 holes of mini golf, and not feeling any better, you look to your left and notice a mysterious 10th hole. As you walk over, you notice there is a red glow in the hole. Against your better judgement, you reach in and pick up the item. You\'ve discoverd a Ruby!'
+ puts 'After playing 9 holes of mini golf, and not feeling any better, you look to your left and notice a mysterious 10th hole. As you walk over, you notice there is a red glow in the hole. Against your better judgement, you reach in and pick up the item. You\'ve discoverd a Ruby!'
 
 
- p 'How do you interact with the Ruby? Hint - You can use any of your five senses as a one word response'
+ puts 'How do you interact with the Ruby? Hint - You can use any of your five senses as a one word response'
 
 sense = gets.chomp
 until sense == 'sight' || sense == 'see' || sense == 'look' || sense == 'seeing' do
-p 'A bystander looks at you awkwardly'
-p 'How do you interact with the Ruby? Hint - You can use any of your five senses as a one word response'
+puts 'A bystander looks at you awkwardly'
+puts 'How do you interact with the Ruby? Hint - You can use any of your five senses as a one word response'
 sense = gets.chomp
 end
-p 'You take the Ruby and hold it up to the light. Looking through it, you notice the mural on the other side has hidden words and a map you can only see through the Ruby. The bartender, noticing you look at the mural, says "It looks like you\'ve found your answer. As you listen to him, you let out a yell as you can feel yourself being pulled through the Ruby and into the map...'
+puts'You take the Ruby and hold it up to the light. Looking through it, you notice the mural on the other side has hidden words and a map you can only see through the Ruby. The bartender, noticing you look at the mural, says "It looks like you\'ve found your answer. As you listen to him, you let out a yell as you can feel yourself being pulled through the Ruby and into the map...'
 gets.chomp 
 
-p'You find yourself standing in front of a giant cave. At the entrance to the cave is a person sitting in a chair, reading a book. As you approach, they greet you. \'Hi, my name is Nicole. Solve this riddle to gain entrance to the cave\' Do you accept this riddle?'
+puts'You find yourself standing in front of a giant cave. At the entrance to the cave is a person sitting in a chair, reading a book. As you approach, they greet you. \'Hi, my name is Nicole. Solve this riddle to gain entrance to the cave\' Do you accept this riddle?'
     riddle_answer = gets.chomp
     if riddle_answer == 'y'
     else
       "Too bad, you have to answer it anyways"
     end
-p "Nicole asks,'Look around to see what you see to gain entry to these tunnels three.
+puts "Nicole asks,'Look around to see what you see to gain entry to these tunnels three.
 The code to the door is Counting up to the answer that will get you through'"
     
 
-p 'Glancing at the floor of the cave entrance near Nicole, you see "OTTFFSSEN"'
+puts 'Glancing at the floor of the cave entrance near Nicole, you see "OTTFFSSEN"'
 answer_nicole = gets.chomp.upcase
 until answer_nicole = 'T' || answer_nicole = '10'
-p 'Try again! Spend a spell of time counting and see if anything comes up. Maybe count to ten and try again.'
+puts 'Try again! Spend a spell of time counting and see if anything comes up. Maybe count to ten and try again.'
 answer_nicole = gets.chomp
 end
-p 'Nicole grants you entry to the cave sytem. You find yourself at the entrance of three tunnels.'
-p 'Which tunnel do you want.  Choose: 1, 2, or 3'
-tunnel_choice = get.chomp
+puts'Nicole grants you entry to the cave sytem. You find yourself at the entrance of three tunnels.'
+puts 'Which tunnel do you want.  Choose: 1, 2, or 3'
+tunnel_choice = gets.chomp
 if tunnel_choice == '1' || tunnel_choice == '2' || tunnel_choice== '3'
-  p "You walk down Tunnel #{tunnel_choice}"
-  p 'At the end of the tunnel you see Charlean holding a cup of tea saying, "Welcome to the Lost City of Aloha!!! She offers it to you as a cure for your dog!'
+  puts "You walk down Tunnel #{tunnel_choice}"
+  puts 'At the end of the tunnel you see Charlean holding a cup of tea saying, "Welcome to the Lost City of Aloha!!! She offers it to you as a cure for your dog!'
 else
-  p 'Sorry, your tunnel choice was not correct. You lose!'
+  puts 'Sorry, your tunnel choice was not correct. You lose!'
 end
 
 
-p "
-  )  (
-    (   ) )
-     ) ( (
-mrf_______)_
-.-'---------|  
-( C|/\/\/\/\/|
-'-./\/\/\/\/|
-  '_________'
-   '-------'"
+
+puts "  ) "
+puts"    (   ) )"
+puts "    ) ( ("
+puts "   _______)_"
+puts ".-'---------|"  
+puts "( C|/\/\/\/\/|"
+puts "'-./\/\/\/\/|"
+puts "  '_________'"
+puts "  '-------'"
 
 
 
