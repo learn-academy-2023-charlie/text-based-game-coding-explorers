@@ -1,11 +1,11 @@
 # Text-based Game Challenge
 
-p "Your dog recently became sick, but the vet is lost on treatment paths. You seek out Vance, who is known for his excellent plants, to see if he has a homeopathic solution. You find him at the mini-golf bar..."
+p "Your dog recently became sick, but the vet is lost on treatment paths. You seek out Vance, who is known for his excellent plants, to see if he has a homeopathic solution. As you search for Vance, you can't help but notice an odd mural on the wall. It's letters and pictures are all jumbled in bright reds and blues, making no sense to you. You shrug it off and locate Vance at the mini-golf bar..."
 p "Vance waves at you when you walk in. 'Welcome in! What are you drinking today?'"
 
     drink = gets.chomp
 
-"He hands you a #{drink}. 'I've seen you here before, what's your name again?'"
+p "He hands you a #{drink}. 'I've seen you here before, what's your name again?'"
 
     name = gets.chomp
     
@@ -25,24 +25,55 @@ p "'#{dog_name} is a good name for a dog.' Vance says. 'I might know something t
       You leave the bar and sit on the bench. You have the sense that you've missed an opportunity for not only saving your dog, but having the adventure of a lifetime."
     end
     
-    
+ p 'After playing 9 holes of mini golf, and not feeling any better, you look to your left and notice a mysterious 10th hole. As you walk over, you notice there is a red glow in the hole. Against your better judgement, you reach in and pick up the item. You\'ve discoverd a Ruby!'
 
 
-# Intro at minigolf bar
+ p 'How do you interact with the Ruby? Hint - You can use any of your five senses as a one word response'
 
-# Vance asks for name
+sense = gets.chomp
+until sense == 'sight' || sense == 'see' || sense == 'look' || sense == 'seeing' do
+p 'A bystander looks at you awkwardly'
+p 'How do you interact with the Ruby? Hint - You can use any of your five senses as a one word response'
+sense = gets.chomp
+end
+p 'You take the Ruby and hold it up to the light. Looking through it, you notice the mural on the other side has hidden words and a map you can only see through the Ruby. The bartender, noticing you look at the mural, says "It looks like you\'ve found your answer. As you listen to him, you let out a yell as you can feel yourself being pulled through the Ruby and into the map...'
+gets.chomp 
+
+p'You find yourself standing in front of a giant cave. At the entrance to the cave is a person sitting in a chair, reading a book. As you approach, they greet you. \'Hi, my name is Nicole. Solve this riddle to gain entrance to the cave\' Do you accept this riddle?'
+    riddle_answer = gets.chomp
+    if riddle_answer == 'y'
+     p "'Nicole asks, \'"Look around to see what you see
+     to gain entry to these tunnels three.
+     The code to the door is Counting up to
+     The answer that will get you through"'"
+    else
+        "Too bad, you have to answer it anyways"
+end
+
+The answer that will get you through"
+Glancing at the floor of the cave entrance near Nicole, you see "OTTFFSSEN"
+answer_nicole = gets.chomp
+until answer_nicole = T || answer_nicole = 10
+p 'Try again! Spend a spell of time counting and see if anything comes up. Maybe count to ten and try again.
+answer_nicole = gets.chomp
+end
+p 'win case'
 
 
-# Choice1: accept drink? y/n
-# yes option, no option results
+def pick_your_tunnel
+    puts "You find yourself at the entrance of three tunnels."
+    puts "You can only pick one."
+    puts "Which will you choose: 1, 2, or 3?"
+    tunnel_choice = get.chomp
+  
+    if choice == 1
+      puts "Proceed down tunnel 1"
+     
+    else
+      puts ""
+    end
 
-# Vance directs #{name} to minigolf'
 
-# Choice2: accept quest? y/n
-# yes option, no option results
-
-# Puzzle1: minigolf puzzle
-# success results, fail results, give up results
 
 #Caves
 
